@@ -338,7 +338,7 @@ const CreateProduct = () => {
                             required
                         />
                         {errorText.productname && 
-                            <div className="invalid-feedback">
+                            <div className="invalid-feedback" data-testid="product-name-validation">
                                 {errorText.productname}
                             </div>
                         }
@@ -367,7 +367,7 @@ const CreateProduct = () => {
                             <option value="Art">Art</option>
                         </select>
                         {errorText.productcategory && 
-                        <div className="invalid-feedback">
+                        <div className="invalid-feedback" data-testid="product-category-validation" >
                             {errorText.productcategory}
                         </div>}
                         </div>
@@ -433,7 +433,7 @@ const CreateProduct = () => {
                             Refurbished
                             </label>
                             {errorText.productfreshness && 
-                            <div className="invalid-feedback">
+                            <div className="invalid-feedback" data-testid="product-freshness-validation">
                             {errorText.productfreshness}
                             </div>}
                         </div>
@@ -453,7 +453,7 @@ const CreateProduct = () => {
                             required
                         />
                         {errorText.additionaldescription && 
-                        <div className="invalid-feedback">
+                        <div className="invalid-feedback" data-testid="additional-description-validation">
                             {errorText.additionaldescription}
                         </div>}
                         </div>
@@ -473,7 +473,7 @@ const CreateProduct = () => {
                             required
                         />
                         {errorText.productprice && 
-                        <div className="invalid-feedback">
+                        <div className="invalid-feedback"  data-testid="product-price-validation">
                             {errorText.productprice}
                         </div>}
                         </div>
